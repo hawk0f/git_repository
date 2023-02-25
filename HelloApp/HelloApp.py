@@ -1,6 +1,23 @@
+# -*- coding: cp1251 -*-
+
 print("Hello Python from Visual Studio!")
 
 s = "*"*30
 print(s)
 print("New Project")
 print(s)
+
+try:
+    month = int(input("¬ведите номер мес€ца\n"))
+except:
+    print("ќшибка ввода данных")
+    exit()
+if month in [1,2,3]: 
+    print(" вартал є1\n")
+elif month in [4,5,6]:
+    print(" вартал є2\n")
+elif month in [7,8,9]:
+    print(" вартал є3\n")
+elif month in [10,11,12]:
+    print(" вартал є4\n")
+else: print("¬ведЄн некорректный номер мес€ца")
